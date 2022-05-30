@@ -1,0 +1,29 @@
+.main-body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+.msg{
+    background-color:  #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    margin-top: 30vh;
+    height: fit-content;
+    width: 30%;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    padding: 40px 90px 40px 90px;
+    font-weight: 600;
+    font-size: 1.2em;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px #111;
+}
+.logout{
+    position: absolute;
+    cursor: pointer;
+    height: fit-content;
+    bottom:20vh;
+    padding: 10px;
+    font-weight: 600;
+    background-color:  #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+}
