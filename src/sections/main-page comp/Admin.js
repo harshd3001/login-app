@@ -52,6 +52,7 @@ function Admin() {
     async function del(){
         await deleteDoc(doc(db, "register", selrow));
         setrdata(rowData.filter(data=>data.email!==selrow))
+        setrow('')
     }
     function desel(){
         setrow('')
