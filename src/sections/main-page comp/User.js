@@ -15,7 +15,6 @@ function User() {
             navigate('/')
           }
         },[])
-  console.log(val[3])
     function lo(){
         Cookies.remove('logs')
         navigate('/')
@@ -23,7 +22,7 @@ function User() {
   return (
     <div className='main-body'>
       <div className="msg">
-          <h1>Welcome,{val[3]}</h1>
+          <h1>Welcome,{Cookies.get('logs').split(',')[3]}</h1>
       </div>
       <button className='logout' onClick={lo}>Logout</button>
     </div>
