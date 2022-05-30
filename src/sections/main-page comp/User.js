@@ -6,11 +6,12 @@ import './User.css'
 
 function User() {
     const navigate=useNavigate();
-    let name=''
+    const [name,setname]=useState('')
+    let val=[]
     const logs =useEffect(()=>{
       if(Cookies.get('logs')){
-          let val=Cookies.get('logs')
-          name=val.split(',')[3]
+          val=Cookies.get('logs')
+          setname(val.split(',')[3])
       }else{
             navigate('/')
           }
