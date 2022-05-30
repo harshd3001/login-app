@@ -6,11 +6,11 @@ import './User.css'
 
 function User() {
     const navigate=useNavigate();
-    let val=[]
+    let name=''
     const logs =useEffect(()=>{
       if(Cookies.get('logs')){
-          val=Cookies.get('logs')
-          val=val.split(',')
+          let val=Cookies.get('logs')
+          name=val.split(',')[3]
       }else{
             navigate('/')
           }
@@ -22,7 +22,7 @@ function User() {
   return (
     <div className='main-body'>
       <div className="msg">
-          <h1>Welcome,{Cookies.get('logs').split(',')[3]}</h1>
+          <h1>Welcome,{name}</h1>
       </div>
       <button className='logout' onClick={lo}>Logout</button>
     </div>
