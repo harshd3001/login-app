@@ -53,6 +53,7 @@ function Admin() {
         await deleteDoc(doc(db, "register", selrow));
         setrdata(rowData.filter(data=>data.email!==selrow))
         setrow('')
+        setdis(true)
     }
     function desel(){
         setrow('')
